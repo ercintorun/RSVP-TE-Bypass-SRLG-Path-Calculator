@@ -1,0 +1,5341 @@
+--------------------
+tunnel madrid1_to_madrid2
+primary path:['madrid1', 'madrid2']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid1_to_prag1
+primary path:['madrid1', 'berlin1', 'prag1']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid1_to_prag2
+primary path:['madrid1', 'berlin1', 'prag1', 'prag2']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid1_to_london1
+primary path:['madrid1', 'berlin1', 'berlin2', 'paris2', 'london1']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel madrid1_to_london2
+primary path:['madrid1', 'berlin1', 'berlin2', 'paris2', 'london1', 'london2']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid1_to_berlin1
+primary path:['madrid1', 'berlin1']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+--------------------
+tunnel madrid1_to_berlin2
+primary path:['madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid1_to_paris1
+primary path:['madrid1', 'madrid2', 'paris1']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid1_to_paris2
+primary path:['madrid1', 'berlin1', 'berlin2', 'paris2']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+--------------------
+tunnel madrid1_to_zagreb1
+primary path:['madrid1', 'madrid2', 'paris1', 'zagreb1']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'zagreb1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['paris1', 'paris2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+--------------------
+tunnel madrid1_to_zagreb2
+primary path:['madrid1', 'berlin1', 'zurich1', 'zagreb2']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel madrid1_to_milano1
+primary path:['madrid1', 'berlin1', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid1_to_milano2
+primary path:['madrid1', 'berlin1', 'zurich1', 'milano2']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel madrid1_to_zurich1
+primary path:['madrid1', 'berlin1', 'zurich1']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+--------------------
+tunnel madrid1_to_zurich2
+primary path:['madrid1', 'berlin1', 'berlin2', 'paris2', 'zurich2']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+--------------------
+tunnel madrid1_to_amsterdam1
+primary path:['madrid1', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid1_to_amsterdam2
+primary path:['madrid1', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid1_to_budapest1
+primary path:['madrid1', 'berlin1', 'budapest2', 'budapest1']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+frr calculation for: ['budapest2', 'budapest1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid1_to_budapest2
+primary path:['madrid1', 'berlin1', 'budapest2']
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel madrid2_to_madrid1
+primary path:['madrid2', 'madrid1']
+
+frr calculation for: ['madrid2', 'madrid1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid2_to_prag1
+primary path:['madrid2', 'madrid1', 'berlin1', 'prag1']
+
+frr calculation for: ['madrid2', 'madrid1']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid2_to_prag2
+primary path:['madrid2', 'madrid1', 'berlin1', 'prag1', 'prag2']
+
+frr calculation for: ['madrid2', 'madrid1']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid2_to_london1
+primary path:['madrid2', 'paris1', 'paris2', 'london1']
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel madrid2_to_london2
+primary path:['madrid2', 'paris1', 'paris2', 'london1', 'london2']
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid2_to_berlin1
+primary path:['madrid2', 'madrid1', 'berlin1']
+
+frr calculation for: ['madrid2', 'madrid1']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+--------------------
+tunnel madrid2_to_berlin2
+primary path:['madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['madrid2', 'madrid1']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid2_to_paris1
+primary path:['madrid2', 'paris1']
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid2_to_paris2
+primary path:['madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid2_to_zagreb1
+primary path:['madrid2', 'paris1', 'zagreb1']
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'zagreb1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['paris1', 'paris2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+--------------------
+tunnel madrid2_to_zagreb2
+primary path:['madrid2', 'paris1', 'paris2', 'zurich2', 'zurich1', 'zagreb2']
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel madrid2_to_milano1
+primary path:['madrid2', 'paris1', 'paris2', 'zurich2', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid2_to_milano2
+primary path:['madrid2', 'paris1', 'paris2', 'zurich2', 'zurich1', 'milano2']
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel madrid2_to_zurich1
+primary path:['madrid2', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid2_to_zurich2
+primary path:['madrid2', 'paris1', 'paris2', 'zurich2']
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+--------------------
+tunnel madrid2_to_amsterdam1
+primary path:['madrid2', 'madrid1', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['madrid2', 'madrid1']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid2_to_amsterdam2
+primary path:['madrid2', 'madrid1', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['madrid2', 'madrid1']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid2_to_budapest1
+primary path:['madrid2', 'madrid1', 'berlin1', 'budapest2', 'budapest1']
+
+frr calculation for: ['madrid2', 'madrid1']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+frr calculation for: ['budapest2', 'budapest1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel madrid2_to_budapest2
+primary path:['madrid2', 'madrid1', 'berlin1', 'budapest2']
+
+frr calculation for: ['madrid2', 'madrid1']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid1', 'berlin1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['madrid1', 'madrid2', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel prag1_to_madrid1
+primary path:['prag1', 'prag2', 'berlin1', 'madrid1']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+--------------------
+tunnel prag1_to_madrid2
+primary path:['prag1', 'paris2', 'paris1', 'madrid2']
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag1_to_prag2
+primary path:['prag1', 'prag2']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag1_to_london1
+primary path:['prag1', 'paris2', 'london1']
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel prag1_to_london2
+primary path:['prag1', 'paris2', 'london1', 'london2']
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag1_to_berlin1
+primary path:['prag1', 'prag2', 'berlin1']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+--------------------
+tunnel prag1_to_berlin2
+primary path:['prag1', 'paris2', 'berlin2']
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+--------------------
+tunnel prag1_to_paris1
+primary path:['prag1', 'paris2', 'paris1']
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag1_to_paris2
+primary path:['prag1', 'paris2']
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+--------------------
+tunnel prag1_to_zagreb1
+primary path:['prag1', 'paris2', 'paris1', 'zagreb1']
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'zagreb1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['paris1', 'paris2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+--------------------
+tunnel prag1_to_zagreb2
+primary path:['prag1', 'paris2', 'zurich2', 'zurich1', 'zagreb2']
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel prag1_to_milano1
+primary path:['prag1', 'paris2', 'zurich2', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag1_to_milano2
+primary path:['prag1', 'paris2', 'zurich2', 'zurich1', 'milano2']
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel prag1_to_zurich1
+primary path:['prag1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag1_to_zurich2
+primary path:['prag1', 'paris2', 'zurich2']
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+--------------------
+tunnel prag1_to_amsterdam1
+primary path:['prag1', 'prag2', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag1_to_amsterdam2
+primary path:['prag1', 'prag2', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag1_to_budapest1
+primary path:['prag1', 'prag2', 'berlin1', 'budapest2', 'budapest1']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+frr calculation for: ['budapest2', 'budapest1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag1_to_budapest2
+primary path:['prag1', 'prag2', 'berlin1', 'budapest2']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel prag2_to_madrid1
+primary path:['prag2', 'berlin1', 'madrid1']
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+--------------------
+tunnel prag2_to_madrid2
+primary path:['prag2', 'berlin1', 'madrid1', 'madrid2']
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag2_to_prag1
+primary path:['prag2', 'prag1']
+
+frr calculation for: ['prag2', 'prag1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag2_to_london1
+primary path:['prag2', 'prag1', 'paris2', 'london1']
+
+frr calculation for: ['prag2', 'prag1']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel prag2_to_london2
+primary path:['prag2', 'prag1', 'paris2', 'london1', 'london2']
+
+frr calculation for: ['prag2', 'prag1']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag2_to_berlin1
+primary path:['prag2', 'berlin1']
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+--------------------
+tunnel prag2_to_berlin2
+primary path:['prag2', 'berlin1', 'berlin2']
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag2_to_paris1
+primary path:['prag2', 'prag1', 'paris2', 'paris1']
+
+frr calculation for: ['prag2', 'prag1']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag2_to_paris2
+primary path:['prag2', 'prag1', 'paris2']
+
+frr calculation for: ['prag2', 'prag1']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+--------------------
+tunnel prag2_to_zagreb1
+primary path:['prag2', 'berlin1', 'zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag2_to_zagreb2
+primary path:['prag2', 'berlin1', 'zurich1', 'zagreb2']
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel prag2_to_milano1
+primary path:['prag2', 'berlin1', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag2_to_milano2
+primary path:['prag2', 'berlin1', 'zurich1', 'milano2']
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel prag2_to_zurich1
+primary path:['prag2', 'berlin1', 'zurich1']
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+--------------------
+tunnel prag2_to_zurich2
+primary path:['prag2', 'prag1', 'paris2', 'zurich2']
+
+frr calculation for: ['prag2', 'prag1']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag1', 'paris2']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['prag1', 'prag2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+--------------------
+tunnel prag2_to_amsterdam1
+primary path:['prag2', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag2_to_amsterdam2
+primary path:['prag2', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag2_to_budapest1
+primary path:['prag2', 'berlin1', 'budapest2', 'budapest1']
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+frr calculation for: ['budapest2', 'budapest1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel prag2_to_budapest2
+primary path:['prag2', 'berlin1', 'budapest2']
+
+frr calculation for: ['prag2', 'berlin1']
+srlg values: ['E', 'G', 'T']
+srlg avoided shortest path: ['prag2', 'prag1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel london1_to_madrid1
+primary path:['london1', 'paris2', 'berlin2', 'berlin1', 'madrid1']
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+--------------------
+tunnel london1_to_madrid2
+primary path:['london1', 'paris2', 'paris1', 'madrid2']
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london1_to_prag1
+primary path:['london1', 'paris2', 'prag1']
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+--------------------
+tunnel london1_to_prag2
+primary path:['london1', 'paris2', 'prag1', 'prag2']
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london1_to_london2
+primary path:['london1', 'london2']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london1_to_berlin1
+primary path:['london1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london1_to_berlin2
+primary path:['london1', 'paris2', 'berlin2']
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+--------------------
+tunnel london1_to_paris1
+primary path:['london1', 'paris2', 'paris1']
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london1_to_paris2
+primary path:['london1', 'paris2']
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+--------------------
+tunnel london1_to_zagreb1
+primary path:['london1', 'london2', 'zagreb1']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+frr calculation for: ['london2', 'zagreb1']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['london2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+--------------------
+tunnel london1_to_zagreb2
+primary path:['london1', 'london2', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+frr calculation for: ['london2', 'zagreb1']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['london2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['zagreb1', 'zagreb2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london1_to_milano1
+primary path:['london1', 'london2', 'zagreb1', 'zagreb2', 'milano1']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+frr calculation for: ['london2', 'zagreb1']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['london2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['zagreb1', 'zagreb2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb2', 'milano1']
+srlg values: ['M']
+srlg avoided shortest path: ['zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1', 'milano2', 'milano1']
+
+--------------------
+tunnel london1_to_milano2
+primary path:['london1', 'london2', 'zurich2', 'zurich1', 'milano2']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+frr calculation for: ['london2', 'zurich2']
+srlg values: ['H', 'R']
+srlg avoided shortest path: ['london2', 'zagreb1', 'zagreb2', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel london1_to_zurich1
+primary path:['london1', 'london2', 'zurich2', 'zurich1']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+frr calculation for: ['london2', 'zurich2']
+srlg values: ['H', 'R']
+srlg avoided shortest path: ['london2', 'zagreb1', 'zagreb2', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london1_to_zurich2
+primary path:['london1', 'london2', 'zurich2']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+frr calculation for: ['london2', 'zurich2']
+srlg values: ['H', 'R']
+srlg avoided shortest path: ['london2', 'zagreb1', 'zagreb2', 'zurich1', 'zurich2']
+
+--------------------
+tunnel london1_to_amsterdam1
+primary path:['london1', 'paris2', 'berlin2', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london1_to_amsterdam2
+primary path:['london1', 'paris2', 'berlin2', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london1_to_budapest1
+primary path:['london1', 'london2', 'zurich2', 'budapest1']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+frr calculation for: ['london2', 'zurich2']
+srlg values: ['H', 'R']
+srlg avoided shortest path: ['london2', 'zagreb1', 'zagreb2', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'budapest1']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['zurich2', 'paris2', 'berlin2', 'berlin1', 'budapest2', 'budapest1']
+
+--------------------
+tunnel london1_to_budapest2
+primary path:['london1', 'paris2', 'berlin2', 'berlin1', 'budapest2']
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel london2_to_madrid1
+primary path:['london2', 'zagreb1', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['london2', 'zagreb1']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['london2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid2', 'madrid1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london2_to_madrid2
+primary path:['london2', 'zagreb1', 'paris1', 'madrid2']
+
+frr calculation for: ['london2', 'zagreb1']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['london2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london2_to_prag1
+primary path:['london2', 'london1', 'paris2', 'prag1']
+
+frr calculation for: ['london2', 'london1']
+no srlg, frr could follow any path
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+--------------------
+tunnel london2_to_prag2
+primary path:['london2', 'london1', 'paris2', 'prag1', 'prag2']
+
+frr calculation for: ['london2', 'london1']
+no srlg, frr could follow any path
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london2_to_london1
+primary path:['london2', 'london1']
+
+frr calculation for: ['london2', 'london1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london2_to_berlin1
+primary path:['london2', 'london1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['london2', 'london1']
+no srlg, frr could follow any path
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london2_to_berlin2
+primary path:['london2', 'london1', 'paris2', 'berlin2']
+
+frr calculation for: ['london2', 'london1']
+no srlg, frr could follow any path
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+--------------------
+tunnel london2_to_paris1
+primary path:['london2', 'zagreb1', 'paris1']
+
+frr calculation for: ['london2', 'zagreb1']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['london2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+--------------------
+tunnel london2_to_paris2
+primary path:['london2', 'london1', 'paris2']
+
+frr calculation for: ['london2', 'london1']
+no srlg, frr could follow any path
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+--------------------
+tunnel london2_to_zagreb1
+primary path:['london2', 'zagreb1']
+
+frr calculation for: ['london2', 'zagreb1']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['london2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+--------------------
+tunnel london2_to_zagreb2
+primary path:['london2', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['london2', 'zagreb1']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['london2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['zagreb1', 'zagreb2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london2_to_milano1
+primary path:['london2', 'zagreb1', 'zagreb2', 'milano1']
+
+frr calculation for: ['london2', 'zagreb1']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['london2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['zagreb1', 'zagreb2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb2', 'milano1']
+srlg values: ['M']
+srlg avoided shortest path: ['zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1', 'milano2', 'milano1']
+
+--------------------
+tunnel london2_to_milano2
+primary path:['london2', 'zurich2', 'zurich1', 'milano2']
+
+frr calculation for: ['london2', 'zurich2']
+srlg values: ['H', 'R']
+srlg avoided shortest path: ['london2', 'zagreb1', 'zagreb2', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel london2_to_zurich1
+primary path:['london2', 'zurich2', 'zurich1']
+
+frr calculation for: ['london2', 'zurich2']
+srlg values: ['H', 'R']
+srlg avoided shortest path: ['london2', 'zagreb1', 'zagreb2', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london2_to_zurich2
+primary path:['london2', 'zurich2']
+
+frr calculation for: ['london2', 'zurich2']
+srlg values: ['H', 'R']
+srlg avoided shortest path: ['london2', 'zagreb1', 'zagreb2', 'zurich1', 'zurich2']
+
+--------------------
+tunnel london2_to_amsterdam1
+primary path:['london2', 'london1', 'paris2', 'berlin2', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['london2', 'london1']
+no srlg, frr could follow any path
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london2_to_amsterdam2
+primary path:['london2', 'london1', 'paris2', 'berlin2', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['london2', 'london1']
+no srlg, frr could follow any path
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel london2_to_budapest1
+primary path:['london2', 'zurich2', 'budapest1']
+
+frr calculation for: ['london2', 'zurich2']
+srlg values: ['H', 'R']
+srlg avoided shortest path: ['london2', 'zagreb1', 'zagreb2', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'budapest1']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['zurich2', 'paris2', 'berlin2', 'berlin1', 'budapest2', 'budapest1']
+
+--------------------
+tunnel london2_to_budapest2
+primary path:['london2', 'london1', 'paris2', 'berlin2', 'berlin1', 'budapest2']
+
+frr calculation for: ['london2', 'london1']
+no srlg, frr could follow any path
+
+frr calculation for: ['london1', 'paris2']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['london1', 'london2', 'zurich2', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel berlin1_to_madrid1
+primary path:['berlin1', 'madrid1']
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+--------------------
+tunnel berlin1_to_madrid2
+primary path:['berlin1', 'madrid1', 'madrid2']
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin1_to_prag1
+primary path:['berlin1', 'prag1']
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin1_to_prag2
+primary path:['berlin1', 'prag1', 'prag2']
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin1_to_london1
+primary path:['berlin1', 'berlin2', 'paris2', 'london1']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel berlin1_to_london2
+primary path:['berlin1', 'berlin2', 'paris2', 'london1', 'london2']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin1_to_berlin2
+primary path:['berlin1', 'berlin2']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin1_to_paris1
+primary path:['berlin1', 'madrid1', 'madrid2', 'paris1']
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin1_to_paris2
+primary path:['berlin1', 'berlin2', 'paris2']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+--------------------
+tunnel berlin1_to_zagreb1
+primary path:['berlin1', 'zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin1_to_zagreb2
+primary path:['berlin1', 'zurich1', 'zagreb2']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel berlin1_to_milano1
+primary path:['berlin1', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin1_to_milano2
+primary path:['berlin1', 'zurich1', 'milano2']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel berlin1_to_zurich1
+primary path:['berlin1', 'zurich1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+--------------------
+tunnel berlin1_to_zurich2
+primary path:['berlin1', 'berlin2', 'paris2', 'zurich2']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+--------------------
+tunnel berlin1_to_amsterdam1
+primary path:['berlin1', 'amsterdam1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin1_to_amsterdam2
+primary path:['berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin1_to_budapest1
+primary path:['berlin1', 'budapest2', 'budapest1']
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+frr calculation for: ['budapest2', 'budapest1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin1_to_budapest2
+primary path:['berlin1', 'budapest2']
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel berlin2_to_madrid1
+primary path:['berlin2', 'berlin1', 'madrid1']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+--------------------
+tunnel berlin2_to_madrid2
+primary path:['berlin2', 'berlin1', 'madrid1', 'madrid2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin2_to_prag1
+primary path:['berlin2', 'berlin1', 'prag1']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin2_to_prag2
+primary path:['berlin2', 'berlin1', 'prag1', 'prag2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin2_to_london1
+primary path:['berlin2', 'paris2', 'london1']
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel berlin2_to_london2
+primary path:['berlin2', 'paris2', 'london1', 'london2']
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin2_to_berlin1
+primary path:['berlin2', 'berlin1']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin2_to_paris1
+primary path:['berlin2', 'paris2', 'paris1']
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin2_to_paris2
+primary path:['berlin2', 'paris2']
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+--------------------
+tunnel berlin2_to_zagreb1
+primary path:['berlin2', 'paris2', 'paris1', 'zagreb1']
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'zagreb1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['paris1', 'paris2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+--------------------
+tunnel berlin2_to_zagreb2
+primary path:['berlin2', 'paris2', 'zurich2', 'zurich1', 'zagreb2']
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel berlin2_to_milano1
+primary path:['berlin2', 'paris2', 'zurich2', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin2_to_milano2
+primary path:['berlin2', 'paris2', 'zurich2', 'zurich1', 'milano2']
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel berlin2_to_zurich1
+primary path:['berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin2_to_zurich2
+primary path:['berlin2', 'paris2', 'zurich2']
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+--------------------
+tunnel berlin2_to_amsterdam1
+primary path:['berlin2', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin2_to_amsterdam2
+primary path:['berlin2', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin2_to_budapest1
+primary path:['berlin2', 'berlin1', 'budapest2', 'budapest1']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+frr calculation for: ['budapest2', 'budapest1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel berlin2_to_budapest2
+primary path:['berlin2', 'berlin1', 'budapest2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel paris1_to_madrid1
+primary path:['paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid2', 'madrid1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris1_to_madrid2
+primary path:['paris1', 'madrid2']
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris1_to_prag1
+primary path:['paris1', 'paris2', 'prag1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+--------------------
+tunnel paris1_to_prag2
+primary path:['paris1', 'paris2', 'prag1', 'prag2']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris1_to_london1
+primary path:['paris1', 'paris2', 'london1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel paris1_to_london2
+primary path:['paris1', 'paris2', 'london1', 'london2']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris1_to_berlin1
+primary path:['paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris1_to_berlin2
+primary path:['paris1', 'paris2', 'berlin2']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+--------------------
+tunnel paris1_to_paris2
+primary path:['paris1', 'paris2']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris1_to_zagreb1
+primary path:['paris1', 'zagreb1']
+
+frr calculation for: ['paris1', 'zagreb1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['paris1', 'paris2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+--------------------
+tunnel paris1_to_zagreb2
+primary path:['paris1', 'paris2', 'zurich2', 'zurich1', 'zagreb2']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel paris1_to_milano1
+primary path:['paris1', 'paris2', 'zurich2', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris1_to_milano2
+primary path:['paris1', 'paris2', 'zurich2', 'zurich1', 'milano2']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel paris1_to_zurich1
+primary path:['paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris1_to_zurich2
+primary path:['paris1', 'paris2', 'zurich2']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+--------------------
+tunnel paris1_to_amsterdam1
+primary path:['paris1', 'paris2', 'berlin2', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris1_to_amsterdam2
+primary path:['paris1', 'paris2', 'berlin2', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris1_to_budapest1
+primary path:['paris1', 'paris2', 'berlin2', 'berlin1', 'budapest2', 'budapest1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+frr calculation for: ['budapest2', 'budapest1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris1_to_budapest2
+primary path:['paris1', 'paris2', 'berlin2', 'berlin1', 'budapest2']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel paris2_to_madrid1
+primary path:['paris2', 'berlin2', 'berlin1', 'madrid1']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+--------------------
+tunnel paris2_to_madrid2
+primary path:['paris2', 'paris1', 'madrid2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris2_to_prag1
+primary path:['paris2', 'prag1']
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+--------------------
+tunnel paris2_to_prag2
+primary path:['paris2', 'prag1', 'prag2']
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris2_to_london1
+primary path:['paris2', 'london1']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel paris2_to_london2
+primary path:['paris2', 'london1', 'london2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris2_to_berlin1
+primary path:['paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris2_to_berlin2
+primary path:['paris2', 'berlin2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+--------------------
+tunnel paris2_to_paris1
+primary path:['paris2', 'paris1']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris2_to_zagreb1
+primary path:['paris2', 'paris1', 'zagreb1']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'zagreb1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['paris1', 'paris2', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+--------------------
+tunnel paris2_to_zagreb2
+primary path:['paris2', 'zurich2', 'zurich1', 'zagreb2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel paris2_to_milano1
+primary path:['paris2', 'zurich2', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris2_to_milano2
+primary path:['paris2', 'zurich2', 'zurich1', 'milano2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel paris2_to_zurich1
+primary path:['paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris2_to_zurich2
+primary path:['paris2', 'zurich2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+--------------------
+tunnel paris2_to_amsterdam1
+primary path:['paris2', 'berlin2', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris2_to_amsterdam2
+primary path:['paris2', 'berlin2', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris2_to_budapest1
+primary path:['paris2', 'berlin2', 'berlin1', 'budapest2', 'budapest1']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+frr calculation for: ['budapest2', 'budapest1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel paris2_to_budapest2
+primary path:['paris2', 'berlin2', 'berlin1', 'budapest2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel zagreb1_to_madrid1
+primary path:['zagreb1', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid2', 'madrid1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb1_to_madrid2
+primary path:['zagreb1', 'paris1', 'madrid2']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb1_to_prag1
+primary path:['zagreb1', 'paris1', 'paris2', 'prag1']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+--------------------
+tunnel zagreb1_to_prag2
+primary path:['zagreb1', 'paris1', 'paris2', 'prag1', 'prag2']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb1_to_london1
+primary path:['zagreb1', 'london2', 'london1']
+
+frr calculation for: ['zagreb1', 'london2']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'london2']
+
+frr calculation for: ['london2', 'london1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb1_to_london2
+primary path:['zagreb1', 'london2']
+
+frr calculation for: ['zagreb1', 'london2']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'london2']
+
+--------------------
+tunnel zagreb1_to_berlin1
+primary path:['zagreb1', 'paris1', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb1_to_berlin2
+primary path:['zagreb1', 'paris1', 'paris2', 'berlin2']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+--------------------
+tunnel zagreb1_to_paris1
+primary path:['zagreb1', 'paris1']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+--------------------
+tunnel zagreb1_to_paris2
+primary path:['zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb1_to_zagreb2
+primary path:['zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb1', 'zagreb2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb1_to_milano1
+primary path:['zagreb1', 'zagreb2', 'milano1']
+
+frr calculation for: ['zagreb1', 'zagreb2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb2', 'milano1']
+srlg values: ['M']
+srlg avoided shortest path: ['zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1', 'milano2', 'milano1']
+
+--------------------
+tunnel zagreb1_to_milano2
+primary path:['zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['zagreb1', 'zagreb2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb2', 'milano1']
+srlg values: ['M']
+srlg avoided shortest path: ['zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['milano1', 'milano2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb1_to_zurich1
+primary path:['zagreb1', 'zagreb2', 'zurich1']
+
+frr calculation for: ['zagreb1', 'zagreb2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb2', 'zurich1']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+--------------------
+tunnel zagreb1_to_zurich2
+primary path:['zagreb1', 'paris1', 'paris2', 'zurich2']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+--------------------
+tunnel zagreb1_to_amsterdam1
+primary path:['zagreb1', 'paris1', 'paris2', 'berlin2', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb1_to_amsterdam2
+primary path:['zagreb1', 'paris1', 'paris2', 'berlin2', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb1_to_budapest1
+primary path:['zagreb1', 'paris1', 'paris2', 'berlin2', 'berlin1', 'budapest2', 'budapest1']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+frr calculation for: ['budapest2', 'budapest1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb1_to_budapest2
+primary path:['zagreb1', 'paris1', 'paris2', 'berlin2', 'berlin1', 'budapest2']
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel zagreb2_to_madrid1
+primary path:['zagreb2', 'zagreb1', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid2', 'madrid1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb2_to_madrid2
+primary path:['zagreb2', 'zagreb1', 'paris1', 'madrid2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb2_to_prag1
+primary path:['zagreb2', 'zagreb1', 'paris1', 'paris2', 'prag1']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+--------------------
+tunnel zagreb2_to_prag2
+primary path:['zagreb2', 'zagreb1', 'paris1', 'paris2', 'prag1', 'prag2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb2_to_london1
+primary path:['zagreb2', 'zagreb1', 'london2', 'london1']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb1', 'london2']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'london2']
+
+frr calculation for: ['london2', 'london1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb2_to_london2
+primary path:['zagreb2', 'zagreb1', 'london2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb1', 'london2']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'london2']
+
+--------------------
+tunnel zagreb2_to_berlin1
+primary path:['zagreb2', 'zurich1', 'berlin1']
+
+frr calculation for: ['zagreb2', 'zurich1']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+--------------------
+tunnel zagreb2_to_berlin2
+primary path:['zagreb2', 'zagreb1', 'paris1', 'paris2', 'berlin2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+--------------------
+tunnel zagreb2_to_paris1
+primary path:['zagreb2', 'zagreb1', 'paris1']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+--------------------
+tunnel zagreb2_to_paris2
+primary path:['zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'paris2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb2_to_zagreb1
+primary path:['zagreb2', 'zagreb1']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb2_to_milano1
+primary path:['zagreb2', 'milano1']
+
+frr calculation for: ['zagreb2', 'milano1']
+srlg values: ['M']
+srlg avoided shortest path: ['zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1', 'milano2', 'milano1']
+
+--------------------
+tunnel zagreb2_to_milano2
+primary path:['zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['zagreb2', 'milano1']
+srlg values: ['M']
+srlg avoided shortest path: ['zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['milano1', 'milano2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb2_to_zurich1
+primary path:['zagreb2', 'zurich1']
+
+frr calculation for: ['zagreb2', 'zurich1']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+--------------------
+tunnel zagreb2_to_zurich2
+primary path:['zagreb2', 'zurich1', 'zurich2']
+
+frr calculation for: ['zagreb2', 'zurich1']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb2_to_amsterdam1
+primary path:['zagreb2', 'zurich1', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['zagreb2', 'zurich1']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb2_to_amsterdam2
+primary path:['zagreb2', 'zurich1', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['zagreb2', 'zurich1']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zagreb2_to_budapest1
+primary path:['zagreb2', 'zurich1', 'zurich2', 'budapest1']
+
+frr calculation for: ['zagreb2', 'zurich1']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'budapest1']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['zurich2', 'paris2', 'berlin2', 'berlin1', 'budapest2', 'budapest1']
+
+--------------------
+tunnel zagreb2_to_budapest2
+primary path:['zagreb2', 'zurich1', 'berlin1', 'budapest2']
+
+frr calculation for: ['zagreb2', 'zurich1']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel milano1_to_madrid1
+primary path:['milano1', 'zagreb2', 'zagreb1', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['milano1', 'zagreb2']
+srlg values: ['M']
+srlg avoided shortest path: ['milano1', 'milano2', 'zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid2', 'madrid1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano1_to_madrid2
+primary path:['milano1', 'zagreb2', 'zagreb1', 'paris1', 'madrid2']
+
+frr calculation for: ['milano1', 'zagreb2']
+srlg values: ['M']
+srlg avoided shortest path: ['milano1', 'milano2', 'zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano1_to_prag1
+primary path:['milano1', 'milano2', 'zurich1', 'zurich2', 'paris2', 'prag1']
+
+frr calculation for: ['milano1', 'milano2']
+no srlg, frr could follow any path
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+--------------------
+tunnel milano1_to_prag2
+primary path:['milano1', 'milano2', 'zurich1', 'zurich2', 'paris2', 'prag1', 'prag2']
+
+frr calculation for: ['milano1', 'milano2']
+no srlg, frr could follow any path
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano1_to_london1
+primary path:['milano1', 'zagreb2', 'zagreb1', 'london2', 'london1']
+
+frr calculation for: ['milano1', 'zagreb2']
+srlg values: ['M']
+srlg avoided shortest path: ['milano1', 'milano2', 'zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb1', 'london2']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'london2']
+
+frr calculation for: ['london2', 'london1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano1_to_london2
+primary path:['milano1', 'zagreb2', 'zagreb1', 'london2']
+
+frr calculation for: ['milano1', 'zagreb2']
+srlg values: ['M']
+srlg avoided shortest path: ['milano1', 'milano2', 'zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb1', 'london2']
+srlg values: ['J', 'Q']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'london2']
+
+--------------------
+tunnel milano1_to_berlin1
+primary path:['milano1', 'milano2', 'zurich1', 'berlin1']
+
+frr calculation for: ['milano1', 'milano2']
+no srlg, frr could follow any path
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+--------------------
+tunnel milano1_to_berlin2
+primary path:['milano1', 'milano2', 'zurich1', 'zurich2', 'paris2', 'berlin2']
+
+frr calculation for: ['milano1', 'milano2']
+no srlg, frr could follow any path
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+--------------------
+tunnel milano1_to_paris1
+primary path:['milano1', 'zagreb2', 'zagreb1', 'paris1']
+
+frr calculation for: ['milano1', 'zagreb2']
+srlg values: ['M']
+srlg avoided shortest path: ['milano1', 'milano2', 'zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zagreb1', 'paris1']
+srlg values: ['J', 'K', 'U']
+srlg avoided shortest path: ['zagreb1', 'zagreb2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+--------------------
+tunnel milano1_to_paris2
+primary path:['milano1', 'milano2', 'zurich1', 'zurich2', 'paris2']
+
+frr calculation for: ['milano1', 'milano2']
+no srlg, frr could follow any path
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+--------------------
+tunnel milano1_to_zagreb1
+primary path:['milano1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['milano1', 'zagreb2']
+srlg values: ['M']
+srlg avoided shortest path: ['milano1', 'milano2', 'zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano1_to_zagreb2
+primary path:['milano1', 'zagreb2']
+
+frr calculation for: ['milano1', 'zagreb2']
+srlg values: ['M']
+srlg avoided shortest path: ['milano1', 'milano2', 'zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel milano1_to_milano2
+primary path:['milano1', 'milano2']
+
+frr calculation for: ['milano1', 'milano2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano1_to_zurich1
+primary path:['milano1', 'milano2', 'zurich1']
+
+frr calculation for: ['milano1', 'milano2']
+no srlg, frr could follow any path
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+--------------------
+tunnel milano1_to_zurich2
+primary path:['milano1', 'milano2', 'zurich1', 'zurich2']
+
+frr calculation for: ['milano1', 'milano2']
+no srlg, frr could follow any path
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano1_to_amsterdam1
+primary path:['milano1', 'milano2', 'zurich1', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['milano1', 'milano2']
+no srlg, frr could follow any path
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano1_to_amsterdam2
+primary path:['milano1', 'milano2', 'zurich1', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['milano1', 'milano2']
+no srlg, frr could follow any path
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano1_to_budapest1
+primary path:['milano1', 'milano2', 'zurich1', 'zurich2', 'budapest1']
+
+frr calculation for: ['milano1', 'milano2']
+no srlg, frr could follow any path
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'budapest1']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['zurich2', 'paris2', 'berlin2', 'berlin1', 'budapest2', 'budapest1']
+
+--------------------
+tunnel milano1_to_budapest2
+primary path:['milano1', 'milano2', 'zurich1', 'berlin1', 'budapest2']
+
+frr calculation for: ['milano1', 'milano2']
+no srlg, frr could follow any path
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel milano2_to_madrid1
+primary path:['milano2', 'zurich1', 'berlin1', 'madrid1']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+--------------------
+tunnel milano2_to_madrid2
+primary path:['milano2', 'zurich1', 'zurich2', 'paris2', 'paris1', 'madrid2']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano2_to_prag1
+primary path:['milano2', 'zurich1', 'zurich2', 'paris2', 'prag1']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+--------------------
+tunnel milano2_to_prag2
+primary path:['milano2', 'zurich1', 'zurich2', 'paris2', 'prag1', 'prag2']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano2_to_london1
+primary path:['milano2', 'zurich1', 'zurich2', 'paris2', 'london1']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel milano2_to_london2
+primary path:['milano2', 'zurich1', 'zurich2', 'london2']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'london2']
+srlg values: ['H', 'R']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'london2']
+
+--------------------
+tunnel milano2_to_berlin1
+primary path:['milano2', 'zurich1', 'berlin1']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+--------------------
+tunnel milano2_to_berlin2
+primary path:['milano2', 'zurich1', 'zurich2', 'paris2', 'berlin2']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+--------------------
+tunnel milano2_to_paris1
+primary path:['milano2', 'zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano2_to_paris2
+primary path:['milano2', 'zurich1', 'zurich2', 'paris2']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+--------------------
+tunnel milano2_to_zagreb1
+primary path:['milano2', 'milano1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+frr calculation for: ['milano1', 'zagreb2']
+srlg values: ['M']
+srlg avoided shortest path: ['milano1', 'milano2', 'zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano2_to_zagreb2
+primary path:['milano2', 'milano1', 'zagreb2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+frr calculation for: ['milano1', 'zagreb2']
+srlg values: ['M']
+srlg avoided shortest path: ['milano1', 'milano2', 'zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel milano2_to_milano1
+primary path:['milano2', 'milano1']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano2_to_zurich1
+primary path:['milano2', 'zurich1']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+--------------------
+tunnel milano2_to_zurich2
+primary path:['milano2', 'zurich1', 'zurich2']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano2_to_amsterdam1
+primary path:['milano2', 'zurich1', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano2_to_amsterdam2
+primary path:['milano2', 'zurich1', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel milano2_to_budapest1
+primary path:['milano2', 'zurich1', 'zurich2', 'budapest1']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'budapest1']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['zurich2', 'paris2', 'berlin2', 'berlin1', 'budapest2', 'budapest1']
+
+--------------------
+tunnel milano2_to_budapest2
+primary path:['milano2', 'zurich1', 'berlin1', 'budapest2']
+
+frr calculation for: ['milano2', 'zurich1']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['milano2', 'milano1', 'zagreb2', 'zagreb1', 'paris1', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel zurich1_to_madrid1
+primary path:['zurich1', 'berlin1', 'madrid1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+--------------------
+tunnel zurich1_to_madrid2
+primary path:['zurich1', 'zurich2', 'paris2', 'paris1', 'madrid2']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich1_to_prag1
+primary path:['zurich1', 'zurich2', 'paris2', 'prag1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+--------------------
+tunnel zurich1_to_prag2
+primary path:['zurich1', 'zurich2', 'paris2', 'prag1', 'prag2']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich1_to_london1
+primary path:['zurich1', 'zurich2', 'paris2', 'london1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel zurich1_to_london2
+primary path:['zurich1', 'zurich2', 'london2']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'london2']
+srlg values: ['H', 'R']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'london2']
+
+--------------------
+tunnel zurich1_to_berlin1
+primary path:['zurich1', 'berlin1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+--------------------
+tunnel zurich1_to_berlin2
+primary path:['zurich1', 'zurich2', 'paris2', 'berlin2']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+--------------------
+tunnel zurich1_to_paris1
+primary path:['zurich1', 'zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich1_to_paris2
+primary path:['zurich1', 'zurich2', 'paris2']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+--------------------
+tunnel zurich1_to_zagreb1
+primary path:['zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich1_to_zagreb2
+primary path:['zurich1', 'zagreb2']
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel zurich1_to_milano1
+primary path:['zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich1_to_milano2
+primary path:['zurich1', 'milano2']
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel zurich1_to_zurich2
+primary path:['zurich1', 'zurich2']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich1_to_amsterdam1
+primary path:['zurich1', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich1_to_amsterdam2
+primary path:['zurich1', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich1_to_budapest1
+primary path:['zurich1', 'zurich2', 'budapest1']
+
+frr calculation for: ['zurich1', 'zurich2']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich2', 'budapest1']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['zurich2', 'paris2', 'berlin2', 'berlin1', 'budapest2', 'budapest1']
+
+--------------------
+tunnel zurich1_to_budapest2
+primary path:['zurich1', 'berlin1', 'budapest2']
+
+frr calculation for: ['zurich1', 'berlin1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel zurich2_to_madrid1
+primary path:['zurich2', 'paris2', 'berlin2', 'berlin1', 'madrid1']
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+--------------------
+tunnel zurich2_to_madrid2
+primary path:['zurich2', 'paris2', 'paris1', 'madrid2']
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+frr calculation for: ['paris1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich2_to_prag1
+primary path:['zurich2', 'paris2', 'prag1']
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+--------------------
+tunnel zurich2_to_prag2
+primary path:['zurich2', 'paris2', 'prag1', 'prag2']
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'prag1']
+srlg values: ['B', 'P']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'prag1']
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich2_to_london1
+primary path:['zurich2', 'paris2', 'london1']
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel zurich2_to_london2
+primary path:['zurich2', 'london2']
+
+frr calculation for: ['zurich2', 'london2']
+srlg values: ['H', 'R']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'london2']
+
+--------------------
+tunnel zurich2_to_berlin1
+primary path:['zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich2_to_berlin2
+primary path:['zurich2', 'paris2', 'berlin2']
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+--------------------
+tunnel zurich2_to_paris1
+primary path:['zurich2', 'paris2', 'paris1']
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich2_to_paris2
+primary path:['zurich2', 'paris2']
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+--------------------
+tunnel zurich2_to_zagreb1
+primary path:['zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich2_to_zagreb2
+primary path:['zurich2', 'zurich1', 'zagreb2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel zurich2_to_milano1
+primary path:['zurich2', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich2_to_milano2
+primary path:['zurich2', 'zurich1', 'milano2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel zurich2_to_zurich1
+primary path:['zurich2', 'zurich1']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich2_to_amsterdam1
+primary path:['zurich2', 'paris2', 'berlin2', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich2_to_amsterdam2
+primary path:['zurich2', 'paris2', 'berlin2', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel zurich2_to_budapest1
+primary path:['zurich2', 'budapest1']
+
+frr calculation for: ['zurich2', 'budapest1']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['zurich2', 'paris2', 'berlin2', 'berlin1', 'budapest2', 'budapest1']
+
+--------------------
+tunnel zurich2_to_budapest2
+primary path:['zurich2', 'paris2', 'berlin2', 'berlin1', 'budapest2']
+
+frr calculation for: ['zurich2', 'paris2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'berlin2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['paris2', 'paris1', 'madrid2', 'madrid1', 'berlin1', 'berlin2']
+
+frr calculation for: ['berlin2', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel amsterdam1_to_madrid1
+primary path:['amsterdam1', 'berlin1', 'madrid1']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+--------------------
+tunnel amsterdam1_to_madrid2
+primary path:['amsterdam1', 'berlin1', 'madrid1', 'madrid2']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam1_to_prag1
+primary path:['amsterdam1', 'berlin1', 'prag1']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam1_to_prag2
+primary path:['amsterdam1', 'berlin1', 'prag1', 'prag2']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam1_to_london1
+primary path:['amsterdam1', 'berlin1', 'berlin2', 'paris2', 'london1']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel amsterdam1_to_london2
+primary path:['amsterdam1', 'berlin1', 'berlin2', 'paris2', 'london1', 'london2']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam1_to_berlin1
+primary path:['amsterdam1', 'berlin1']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam1_to_berlin2
+primary path:['amsterdam1', 'berlin1', 'berlin2']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam1_to_paris1
+primary path:['amsterdam1', 'berlin1', 'madrid1', 'madrid2', 'paris1']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam1_to_paris2
+primary path:['amsterdam1', 'berlin1', 'berlin2', 'paris2']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+--------------------
+tunnel amsterdam1_to_zagreb1
+primary path:['amsterdam1', 'berlin1', 'zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam1_to_zagreb2
+primary path:['amsterdam1', 'berlin1', 'zurich1', 'zagreb2']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel amsterdam1_to_milano1
+primary path:['amsterdam1', 'berlin1', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam1_to_milano2
+primary path:['amsterdam1', 'berlin1', 'zurich1', 'milano2']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel amsterdam1_to_zurich1
+primary path:['amsterdam1', 'berlin1', 'zurich1']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+--------------------
+tunnel amsterdam1_to_zurich2
+primary path:['amsterdam1', 'berlin1', 'berlin2', 'paris2', 'zurich2']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+--------------------
+tunnel amsterdam1_to_amsterdam2
+primary path:['amsterdam1', 'amsterdam2']
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam1_to_budapest1
+primary path:['amsterdam1', 'berlin1', 'budapest2', 'budapest1']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+frr calculation for: ['budapest2', 'budapest1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam1_to_budapest2
+primary path:['amsterdam1', 'berlin1', 'budapest2']
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel amsterdam2_to_madrid1
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'madrid1']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+--------------------
+tunnel amsterdam2_to_madrid2
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'madrid1', 'madrid2']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam2_to_prag1
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'prag1']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam2_to_prag2
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'prag1', 'prag2']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam2_to_london1
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'berlin2', 'paris2', 'london1']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel amsterdam2_to_london2
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'berlin2', 'paris2', 'london1', 'london2']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+frr calculation for: ['london1', 'london2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam2_to_berlin1
+primary path:['amsterdam2', 'amsterdam1', 'berlin1']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam2_to_berlin2
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'berlin2']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam2_to_paris1
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'madrid1', 'madrid2', 'paris1']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam2_to_paris2
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'berlin2', 'paris2']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+--------------------
+tunnel amsterdam2_to_zagreb1
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam2_to_zagreb2
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'zurich1', 'zagreb2']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel amsterdam2_to_milano1
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam2_to_milano2
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'zurich1', 'milano2']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel amsterdam2_to_zurich1
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'zurich1']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+--------------------
+tunnel amsterdam2_to_zurich2
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'berlin2', 'paris2', 'zurich2']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'zurich2']
+srlg values: ['H', 'I']
+srlg avoided shortest path: ['paris2', 'berlin2', 'berlin1', 'zurich1', 'zurich2']
+
+--------------------
+tunnel amsterdam2_to_amsterdam1
+primary path:['amsterdam2', 'amsterdam1']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam2_to_budapest1
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'budapest2', 'budapest1']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+frr calculation for: ['budapest2', 'budapest1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel amsterdam2_to_budapest2
+primary path:['amsterdam2', 'amsterdam1', 'berlin1', 'budapest2']
+
+frr calculation for: ['amsterdam2', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'berlin1']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin1', 'budapest2']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'budapest1', 'budapest2']
+
+--------------------
+tunnel budapest1_to_madrid1
+primary path:['budapest1', 'budapest2', 'berlin1', 'madrid1']
+
+frr calculation for: ['budapest1', 'budapest2']
+no srlg, frr could follow any path
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+--------------------
+tunnel budapest1_to_madrid2
+primary path:['budapest1', 'budapest2', 'berlin1', 'madrid1', 'madrid2']
+
+frr calculation for: ['budapest1', 'budapest2']
+no srlg, frr could follow any path
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest1_to_prag1
+primary path:['budapest1', 'budapest2', 'berlin1', 'prag1']
+
+frr calculation for: ['budapest1', 'budapest2']
+no srlg, frr could follow any path
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest1_to_prag2
+primary path:['budapest1', 'budapest2', 'berlin1', 'prag1', 'prag2']
+
+frr calculation for: ['budapest1', 'budapest2']
+no srlg, frr could follow any path
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest1_to_london1
+primary path:['budapest1', 'budapest2', 'berlin1', 'berlin2', 'paris2', 'london1']
+
+frr calculation for: ['budapest1', 'budapest2']
+no srlg, frr could follow any path
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel budapest1_to_london2
+primary path:['budapest1', 'zurich2', 'london2']
+
+frr calculation for: ['budapest1', 'zurich2']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['budapest1', 'budapest2', 'berlin1', 'berlin2', 'paris2', 'zurich2']
+
+frr calculation for: ['zurich2', 'london2']
+srlg values: ['H', 'R']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'london2']
+
+--------------------
+tunnel budapest1_to_berlin1
+primary path:['budapest1', 'budapest2', 'berlin1']
+
+frr calculation for: ['budapest1', 'budapest2']
+no srlg, frr could follow any path
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+--------------------
+tunnel budapest1_to_berlin2
+primary path:['budapest1', 'budapest2', 'berlin1', 'berlin2']
+
+frr calculation for: ['budapest1', 'budapest2']
+no srlg, frr could follow any path
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest1_to_paris1
+primary path:['budapest1', 'budapest2', 'berlin1', 'madrid1', 'madrid2', 'paris1']
+
+frr calculation for: ['budapest1', 'budapest2']
+no srlg, frr could follow any path
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest1_to_paris2
+primary path:['budapest1', 'budapest2', 'berlin1', 'berlin2', 'paris2']
+
+frr calculation for: ['budapest1', 'budapest2']
+no srlg, frr could follow any path
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+--------------------
+tunnel budapest1_to_zagreb1
+primary path:['budapest1', 'zurich2', 'zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['budapest1', 'zurich2']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['budapest1', 'budapest2', 'berlin1', 'berlin2', 'paris2', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest1_to_zagreb2
+primary path:['budapest1', 'zurich2', 'zurich1', 'zagreb2']
+
+frr calculation for: ['budapest1', 'zurich2']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['budapest1', 'budapest2', 'berlin1', 'berlin2', 'paris2', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel budapest1_to_milano1
+primary path:['budapest1', 'zurich2', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['budapest1', 'zurich2']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['budapest1', 'budapest2', 'berlin1', 'berlin2', 'paris2', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest1_to_milano2
+primary path:['budapest1', 'zurich2', 'zurich1', 'milano2']
+
+frr calculation for: ['budapest1', 'zurich2']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['budapest1', 'budapest2', 'berlin1', 'berlin2', 'paris2', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel budapest1_to_zurich1
+primary path:['budapest1', 'zurich2', 'zurich1']
+
+frr calculation for: ['budapest1', 'zurich2']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['budapest1', 'budapest2', 'berlin1', 'berlin2', 'paris2', 'zurich2']
+
+frr calculation for: ['zurich2', 'zurich1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest1_to_zurich2
+primary path:['budapest1', 'zurich2']
+
+frr calculation for: ['budapest1', 'zurich2']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['budapest1', 'budapest2', 'berlin1', 'berlin2', 'paris2', 'zurich2']
+
+--------------------
+tunnel budapest1_to_amsterdam1
+primary path:['budapest1', 'budapest2', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['budapest1', 'budapest2']
+no srlg, frr could follow any path
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest1_to_amsterdam2
+primary path:['budapest1', 'budapest2', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['budapest1', 'budapest2']
+no srlg, frr could follow any path
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest1_to_budapest2
+primary path:['budapest1', 'budapest2']
+
+frr calculation for: ['budapest1', 'budapest2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest2_to_madrid1
+primary path:['budapest2', 'berlin1', 'madrid1']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+--------------------
+tunnel budapest2_to_madrid2
+primary path:['budapest2', 'berlin1', 'madrid1', 'madrid2']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest2_to_prag1
+primary path:['budapest2', 'berlin1', 'prag1']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest2_to_prag2
+primary path:['budapest2', 'berlin1', 'prag1', 'prag2']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'prag1']
+no srlg, frr could follow any path
+
+frr calculation for: ['prag1', 'prag2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest2_to_london1
+primary path:['budapest2', 'berlin1', 'berlin2', 'paris2', 'london1']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+frr calculation for: ['paris2', 'london1']
+srlg values: ['A', 'P', 'U']
+srlg avoided shortest path: ['paris2', 'zurich2', 'london2', 'london1']
+
+--------------------
+tunnel budapest2_to_london2
+primary path:['budapest2', 'budapest1', 'zurich2', 'london2']
+
+frr calculation for: ['budapest2', 'budapest1']
+no srlg, frr could follow any path
+
+frr calculation for: ['budapest1', 'zurich2']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['budapest1', 'budapest2', 'berlin1', 'berlin2', 'paris2', 'zurich2']
+
+frr calculation for: ['zurich2', 'london2']
+srlg values: ['H', 'R']
+srlg avoided shortest path: ['zurich2', 'zurich1', 'zagreb2', 'zagreb1', 'london2']
+
+--------------------
+tunnel budapest2_to_berlin1
+primary path:['budapest2', 'berlin1']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+--------------------
+tunnel budapest2_to_berlin2
+primary path:['budapest2', 'berlin1', 'berlin2']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest2_to_paris1
+primary path:['budapest2', 'berlin1', 'madrid1', 'madrid2', 'paris1']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'madrid1']
+srlg values: ['C', 'D', 'E']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'paris1', 'madrid2', 'madrid1']
+
+frr calculation for: ['madrid1', 'madrid2']
+no srlg, frr could follow any path
+
+frr calculation for: ['madrid2', 'paris1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest2_to_paris2
+primary path:['budapest2', 'berlin1', 'berlin2', 'paris2']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'berlin2']
+no srlg, frr could follow any path
+
+frr calculation for: ['berlin2', 'paris2']
+srlg values: ['A', 'B']
+srlg avoided shortest path: ['berlin2', 'berlin1', 'madrid1', 'madrid2', 'paris1', 'paris2']
+
+--------------------
+tunnel budapest2_to_zagreb1
+primary path:['budapest2', 'berlin1', 'zurich1', 'zagreb2', 'zagreb1']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+frr calculation for: ['zagreb2', 'zagreb1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest2_to_zagreb2
+primary path:['budapest2', 'berlin1', 'zurich1', 'zagreb2']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'zagreb2']
+srlg values: ['L', 'M', 'N']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2']
+
+--------------------
+tunnel budapest2_to_milano1
+primary path:['budapest2', 'berlin1', 'zurich1', 'milano2', 'milano1']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+frr calculation for: ['milano2', 'milano1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest2_to_milano2
+primary path:['budapest2', 'berlin1', 'zurich1', 'milano2']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+frr calculation for: ['zurich1', 'milano2']
+srlg values: ['L', 'O']
+srlg avoided shortest path: ['zurich1', 'zurich2', 'paris2', 'paris1', 'zagreb1', 'zagreb2', 'milano1', 'milano2']
+
+--------------------
+tunnel budapest2_to_zurich1
+primary path:['budapest2', 'berlin1', 'zurich1']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'zurich1']
+srlg values: ['C', 'F', 'G']
+srlg avoided shortest path: ['berlin1', 'berlin2', 'paris2', 'zurich2', 'zurich1']
+
+--------------------
+tunnel budapest2_to_zurich2
+primary path:['budapest2', 'budapest1', 'zurich2']
+
+frr calculation for: ['budapest2', 'budapest1']
+no srlg, frr could follow any path
+
+frr calculation for: ['budapest1', 'zurich2']
+srlg values: ['N', 'O', 'S']
+srlg avoided shortest path: ['budapest1', 'budapest2', 'berlin1', 'berlin2', 'paris2', 'zurich2']
+
+--------------------
+tunnel budapest2_to_amsterdam1
+primary path:['budapest2', 'berlin1', 'amsterdam1']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest2_to_amsterdam2
+primary path:['budapest2', 'berlin1', 'amsterdam1', 'amsterdam2']
+
+frr calculation for: ['budapest2', 'berlin1']
+srlg values: ['D', 'F', 'T']
+srlg avoided shortest path: ['budapest2', 'budapest1', 'zurich2', 'paris2', 'berlin2', 'berlin1']
+
+frr calculation for: ['berlin1', 'amsterdam1']
+no srlg, frr could follow any path
+
+frr calculation for: ['amsterdam1', 'amsterdam2']
+no srlg, frr could follow any path
+
+--------------------
+tunnel budapest2_to_budapest1
+primary path:['budapest2', 'budapest1']
+
+frr calculation for: ['budapest2', 'budapest1']
+no srlg, frr could follow any path
+
+---------------RESULT-------------------
+total tunnel count:380
+total frr count sayisi:1085
+total unsuccesfull frr count: 0

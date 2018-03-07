@@ -1,0 +1,245 @@
+# YAML
+nodes:
+ - madrid1
+ - madrid2
+ - prag1
+ - prag2
+ - london1
+ - london2
+ - berlin1
+ - berlin2
+ - paris1
+ - paris2
+ - zagreb1
+ - zagreb2
+ - milano1
+ - milano2
+ - zurich1
+ - zurich2
+ - amsterdam1
+ - amsterdam2
+ - budapest1
+ - budapest2
+
+srlg_values:
+ - A
+ - B
+ - C
+ - D
+ - E
+ - F
+ - G
+ - H
+ - I
+ - J
+ - K
+ - L
+ - M
+ - N
+ - O
+ - P
+ - Q
+ - R
+ - S
+ - T
+ - U
+distances:
+ madrid1: 
+  madrid2: 10
+  berlin1: 10
+ madrid2:
+  madrid1: 10
+  paris1: 10
+ berlin1: 
+  madrid1: 10
+  berlin2: 10
+  prag1: 100
+  zurich1: 30
+  amsterdam1: 30
+  budapest2: 520
+ berlin2: 
+  berlin1: 10
+  paris2: 10
+ prag1: 
+  prag2: 1
+  paris2: 100  
+ prag2: 
+  prag1: 10
+  berlin1: 100
+ london1:
+  london2: 10
+  paris2: 200
+ london2:
+  london1: 10
+  zagreb1: 200
+  zurich2: 200
+ paris1:
+  paris2: 10
+  madrid2: 10
+  zagreb1: 39
+ paris2:
+  paris1: 10
+  berlin2: 10
+  zurich2: 15
+  london1: 200
+  prag1: 100
+ zagreb1:
+  zagreb2: 10
+  paris1: 11
+  london2: 200
+ zagreb2:
+  zagreb1: 10
+  zurich1: 17
+  milano1: 16
+ milano1:
+  milano2: 10
+  zagreb2: 12
+ milano2: 
+  milano1: 10
+  zurich1: 10
+ zurich1:
+  zurich2: 10
+  milano2: 11 
+  zagreb2: 14
+  berlin1: 30
+ zurich2: 
+  zurich1: 10
+  london2: 200
+  paris2: 10
+  amsterdam2: 50000
+  budapest1: 540
+ amsterdam1: 
+  amsterdam2: 10
+  berlin1: 30
+ amsterdam2: 
+  amsterdam1: 10
+  zurich2: 30000
+ budapest1: 
+  budapest2: 10
+  zurich2: 540
+ budapest2: 
+  budapest1: 10
+  berlin1: 520 
+
+srlg:
+ prag1:
+  paris2:
+   - B
+   - P
+ prag2:
+  berlin1:
+   - E
+   - G
+   - T
+ budapest1:
+  zurich2:
+   - N
+   - O
+   - S
+ budapest2:
+  berlin1:
+   - D
+   - F
+   - T
+ milano1:
+  zagreb2:
+   - M
+ milano2:
+  zurich1:
+   - L
+   - O
+ london1:
+  paris2:
+   - A
+   - P
+   - U
+ london2:
+  zurich2:
+   - H
+   - R
+  zagreb1:
+   - J
+   - Q
+ paris1:
+  zagreb1:
+   - J
+   - K
+   - U
+ paris2:
+  berlin2:
+   - A 
+   - B
+  london1:
+   - A
+   - P
+   - U
+  prag1:
+   - B
+   - P
+  zurich2:
+   - H
+   - I
+ madrid1:
+  berlin1:
+   - C
+   - D
+   - E
+ berlin1:
+  madrid1:
+   - C
+   - D
+   - E
+  zurich1:
+   - C
+   - F
+   - G
+  budapest2:
+   - D
+   - F
+   - T
+  prag2:
+   - E
+   - G
+   - T
+ berlin2:
+  paris2:
+   - A
+   - B
+ zurich1:
+  berlin1:
+   - C
+   - F
+   - G
+  zagreb2:
+   - L
+   - M
+   - N
+  milano2:
+   - L
+   - O
+ zurich2:
+  paris2:
+   - H
+   - I
+  london2:
+   - H
+   - R
+  budapest1:
+   - N
+   - O
+   - S
+ zagreb1:
+  paris1:
+   - J
+   - K
+   - U
+  london2:
+   - J
+   - Q
+ zagreb2:
+  zurich1:
+   - L
+   - M
+   - N
+  milano1:
+   - M
